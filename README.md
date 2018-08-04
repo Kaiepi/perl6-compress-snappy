@@ -17,6 +17,77 @@ See also examples/test.p6
 This module uses NativeCall to provide bindings to the C API for libsnappy, a
 compression library with an emphasis on speed over compression.
 
+Snappy must be installed in order to use this package. Depending on your OS, installation instructions are as follows:
+
+- Windows
+
+Download Snappy from https://snappy.machinezoo.com/downloads/ and follow the instructions.
+
+- OS X
+```
+$ brew install snappy
+```
+
+- Ubuntu/Debian
+```
+$ sudo apt-get install snappy
+```
+
+- OpenSUSE
+```
+$ sudo zypper install snappy
+```
+
+- Fedora
+```
+$ sudo yum install snappy
+```
+
+- Arch/Manjaro
+```
+$ sudo pacman -S snappy
+```
+
+- FreeBSD
+```
+# pkg install snappy
+```
+
+or
+
+```
+# cd /usr/ports/archiver/snappy
+# make config
+# make
+# make install
+```
+
+- OpenBSD
+```
+$ doas pkg_add snappy
+```
+
+or
+
+```
+$ cd /usr/ports/archivers/snappy
+$ doas make
+$ doas make install
+```
+
+- NetBSD
+```
+# pkgin install snappy
+```
+
+or
+
+```
+# cd /usr/pkgsrc/devel/snappy
+# make
+# make install
+```
+
 # FUNCTIONS
 
 ## Compress::Snappy::compress(Blob $uncompressed) returns Buf
